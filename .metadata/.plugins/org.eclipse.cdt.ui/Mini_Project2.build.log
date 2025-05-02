@@ -1,0 +1,36 @@
+15:03:36 **** Incremental Build of configuration Debug for project Mini_Project2 ****
+make all 
+Building file: ../Mini_Project2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project2.d" -MT"Mini_Project2.o" -c -o "Mini_Project2.o" "../Mini_Project2.c"
+In file included from ../Mini_Project2.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project2.c
+ 
+Building target: Mini_Project2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project2.map -mmcu=atmega32 -o "Mini_Project2.elf"  ./Mini_Project2.o   
+Finished building target: Mini_Project2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project2.elf  >"Mini_Project2.lss"
+Finished building: Mini_Project2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6374 bytes (19.5% Full)
+(.text + .data + .bootloader)
+
+Data:         23 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:03:39 Build Finished. 0 errors, 1 warnings. (took 3s.22ms)
+
